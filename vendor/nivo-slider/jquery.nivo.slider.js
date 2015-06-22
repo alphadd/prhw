@@ -110,7 +110,7 @@
             } else {
                 nivoCaption.stop().fadeOut(settings.animSpeed);
             }
-        }
+        };
 
         //Process initial  caption
         processCaption(settings);
@@ -363,8 +363,8 @@
 
             // Generate random effect
             if (settings.effect === 'random') {
-                anims = new Array('sliceDownRight', 'sliceDownLeft', 'sliceUpRight', 'sliceUpLeft', 'sliceUpDown', 'sliceUpDownLeft', 'fold', 'fade',
-                    'boxRandom', 'boxRain', 'boxRainReverse', 'boxRainGrow', 'boxRainGrowReverse');
+                anims = ['sliceDownRight', 'sliceDownLeft', 'sliceUpRight', 'sliceUpLeft', 'sliceUpDown', 'sliceUpDownLeft', 'fold', 'fade',
+                    'boxRandom', 'boxRain', 'boxRainReverse', 'boxRainGrow', 'boxRainGrowReverse'];
                 currentEffect = anims[Math.floor(Math.random() * (anims.length + 1))];
                 if (currentEffect === undefined) {
                     currentEffect = 'fade';

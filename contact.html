@@ -69,30 +69,30 @@
 
 <div class="body">
     <header id="header">
-        <div class="header_mobile" style="width: 100%;"><h4 style="color:white;text-transform: uppercase;padding: 10px 0; background:#C03D2B;" class="text-center">Palmer Ranch HomeWatchers®</h4></div>
+        <div class="header_mobile" style="width: 100%;"><h4 style="color:white;text-transform: uppercase;padding: 10px 0; background:#C03D2B;" class="text-center">Palmer Ranch HomeWatchers<sup>&reg;</sup></h4></div>
         <div class="container">
             <div class="logo">
                 <a href="index.html">
-                    <img class="img-responsive" alt="Palmer Ranch HomeWatchers® logo" src="img/logo2.png">
+                    <img class="img-responsive" alt="Palmer Ranch HomeWatchers<sup>&reg;</sup> logo" src="img/logo2.png">
                 </a>
             </div>
 
 
             <div class="logo2">
                 <a href="index.html">
-                    <img class="img-responsive" alt="Palmer Ranch HomeWatchers® logo" src="img/logo_icon.png">
+                    <img class="img-responsive" alt="Palmer Ranch HomeWatchers<sup>&reg;</sup> logo" src="img/logo_icon.png">
                 </a>
             </div>
 
             <div class="logo3">
                 <a href="index.html">
-                    <img class="img-responsive" alt="Palmer Ranch HomeWatchers® logo" src="img/logo3.png">
+                    <img class="img-responsive" alt="Palmer Ranch HomeWatchers<sup>&reg;</sup> logo" src="img/logo3.png">
                 </a>
             </div>
 
             <nav>
-                <ul style="padding: 10px 20px 10px 0;" class="nav nav-pills nav-top">
-                    <li class="phone"><a href="tel:9419936613 "><span><i class="fa fa-phone"></i>(941) 993-6613 </span></a></li>
+                <ul  class="nav nav-pills nav-top">
+                    <li class="phone"><a href="tel:9419936613 "><i class="fa fa-phone"></i>(941) 993-6613 </a></li>
                 </ul>
             </nav>
             <button class="btn btn-responsive-nav btn-inverse" data-toggle="collapse" data-target=".nav-main-collapse">
@@ -102,6 +102,9 @@
 
                 <nav class="nav-main mega-menu">
                     <ul class="nav nav-pills nav-main" id="mainMenu">
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
                         <li>
                             <a href="about.html">About</a>
                         </li>
@@ -142,17 +145,17 @@
         </section>
 
         <!-- Google Maps - Go to the bottom of the page to change settings and map location. -->
-        <div id="googlemaps" class="google-map"></div>
 
         <div class="container">
 
             <div class="row">
-                <div style="margin-bottom: 40px" class="col-md-12">
+
+                <div style="margin-bottom: 40px" class="col-md-8 push-top">
 
                     <div class="offset-anchor" id="contact-sent"></div>
 
 
-                    <h2 class="short"><strong>Fill out</strong> this form to contact us</h2>
+                    <h2 class="short">Fill out this form to contact us</h2>
 
                     <form id="contactFormAdvanced" action="contact-us-advanced.php#contact-sent" method="POST"
                           enctype="multipart/form-data">
@@ -160,67 +163,34 @@
 
                         <div class="row">
                             <div class="form-group">
-                                <div class="col-md-6">
+                                <div class="col-md-12">
                                     <label>Your name *</label>
                                     <input type="text" value="" data-msg-required="Please enter your name."
                                            maxlength="100" class="form-control" name="name" id="name" required>
-                                </div>
-                                <div class="col-md-6">
-                                    <label>Address 1 *</label>
-                                    <input type="email" value="" data-msg-required="Please enter your email address."
-                                           data-msg-email="Please enter a valid email address." maxlength="100"
-                                           class="form-control" name="email" id="email" required>
                                 </div>
                             </div>
                         </div>
                         <div class="row">
                             <div class="form-group">
-                                <div class="col-md-6">
+                                <div class="col-md-12">
                                     <label>Your email address *</label>
                                     <input type="email" value="" data-msg-required="Please enter your email address."
                                            data-msg-email="Please enter a valid email address." maxlength="100"
                                            class="form-control" name="email" id="email" required>
                                 </div>
-                                <div class="col-md-6">
-                                    <label>Address 2 *</label>
-                                    <input type="email" value="" data-msg-required="Please enter your email address."
-                                           data-msg-email="Please enter a valid email address." maxlength="100"
-                                           class="form-control" name="email" id="email" required>
-                                </div>
                             </div>
                         </div>
                         <div class="row">
                             <div class="form-group">
-                                <div class="col-md-6">
+                                <div class="col-md-12">
                                     <label>Your phone number *</label>
                                     <input type="email" value="" data-msg-required="Please enter your email address."
                                            data-msg-email="Please enter a valid email address." maxlength="100"
                                            class="form-control" name="email" id="email" required>
                                 </div>
-                                <div class="col-md-6">
-                                    <label>City, State *</label>
-                                    <input type="email" value="" data-msg-required="Please enter your email address."
-                                           data-msg-email="Please enter a valid email address." maxlength="100"
-                                           class="form-control" name="email" id="email" required>
-                                </div>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="form-group">
-                                <div class="col-md-6">
-                                    <label>Subject *</label>
-                                    <input type="email" value="" data-msg-required="Please enter your email address."
-                                           data-msg-email="Please enter a valid email address." maxlength="100"
-                                           class="form-control" name="email" id="email" required>
-                                </div>
-                                <div class="col-md-6">
-                                    <label>Zip Code *</label>
-                                    <input type="email" value="" data-msg-required="Please enter your email address."
-                                           data-msg-email="Please enter a valid email address." maxlength="100"
-                                           class="form-control" name="email" id="email" required>
-                                </div>
-                            </div>
-                        </div>
+
                         <div class="row">
                             <div class="form-group">
                                 <div class="col-md-12">
@@ -268,6 +238,10 @@
                         </div>
                     </form>
                 </div>
+<div class="col-md-4 pull-right">
+    <img class="img-responsive" src="img/prhw_icon.png" alt=""/>
+</div>
+
             </div>
 
         </div>
@@ -278,13 +252,13 @@
         <div class="footer-copyright">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-3">
+                    <div class="col-md-2">
                         <a href="index.html" class="logo">
-                            <img alt="Palmer Ranch HomeWatchers®" class="img-responsive" src="img/logo.png">
+                            <img alt="Palmer Ranch HomeWatchers<sup>&reg;</sup>" class="img-responsive" src="img/logo.png">
                         </a>
                     </div>
                     <div class="col-md-5">
-                                           <p>Palmer Ranch HomeWatchers® is a Registered Trademark.</p>                     <p style="font-weight:lighter!important;color:black">Palmer Ranch HomeWatchers® LLC is a private company and is not affiliated with Palmer Ranch Development, Holdings or its Entities.</p>
+                                           <p>Palmer Ranch HomeWatchers<sup>&reg;</sup> is a Registered Trademark.</p>                     <p style="font-weight:lighter!important;color:black">Palmer Ranch HomeWatchers<sup>&reg;</sup> LLC is a private company and is not affiliated with Palmer Ranch Development, Holdings or its Entities.</p>
                     </div>
                     <div class="col-md-4">
                         <nav id="sub-menu">
@@ -337,7 +311,7 @@
 
     var mapMarkers = [{
         address: "Palmer Ranch",
-        html: "<strong>Palmer Ranch HomeWatchers®</strong><br>Sarasota, FL 34238",
+        html: "<strong>Palmer Ranch HomeWatchers<sup>&reg;</sup></strong><br>Sarasota, FL 34238",
         icon: {
             image: "img/pin.png",
             iconsize: [26, 46],

@@ -1,5 +1,14 @@
 @import url(http://fonts.googleapis.com/css?family=Lora:400,700);
 
+
+sup {
+    position: relative;
+    font-size: 40%;
+    line-height: 0;
+    vertical-align: baseline;
+    top: -1.2em;
+}
+
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
     color: #C03D2B;
@@ -186,9 +195,10 @@ blockquote {
 
 /* Paragraphs */
 p {
-    color: #898989;
+    color: #3F382C;
     line-height: 24px;
     margin: 0 0 20px;
+    text-shadow: 0px 1px 1px #FFF;
 }
 
 p.featured {
@@ -300,6 +310,8 @@ ul.nav-pills > li.active > a:hover, ul.nav-pills > li.active > a:focus {
 .btn-primary.active {
     background-color: #C03D2B;
     border-color: #C03D2B;
+    text-shadow: 0px -1px 1px #7d0d17;
+    box-shadow: 0px 1px 1px #7d0d17;
 }
 
 .btn-primary:hover {
@@ -1065,6 +1077,11 @@ ul.sitemap.list ul {
     -ms-transition: opacity 400ms ease;
     -o-transition: opacity 400ms ease;
     transition: opacity 400ms ease;
+}
+
+.testimonial  {
+    font-style: italic;
+    line-height:25pt !important;
 }
 
 /* Responsive */
@@ -2249,7 +2266,12 @@ section.timeline .timeline-box .owl-carousel {
     }
 }
 
+
 @media (max-width: 479px) {
+    h1.big {
+        font-size: em;
+        line-height: 42px;
+    }
     section.timeline {
         width: auto;
         float: none;
@@ -2278,13 +2300,14 @@ section.timeline .timeline-box .owl-carousel {
 
 /* Testimonials */
 blockquote.testimonial {
+    background: #CCC none repeat scroll 0% 0%;
     border-radius: 10px;
-    border: 0;
-    color: #333;
-    font-family: Georgia, serif;
+    border: 0px none;
+    color: #666;
+    font-family: Georgia,serif;
     font-style: italic;
-    margin: 0;
-    padding: 50px;
+    margin: 0px;
+    padding: 10px 50px;
     position: relative;
 }
 
@@ -2357,7 +2380,6 @@ blockquote.testimonial p {
 
 .testimonial-author p {
     color: #999;
-    margin: 0 0 0 25px;
     text-align: left;
 }
 
@@ -3273,9 +3295,8 @@ ul.history li .featured-box .box-content {
 
 .phone {
     font-size: 1.5em;
-    font-family: sans-serif;
     padding:5px 10px;
-    background:#C03D2B
+    text-shadow: 0px 1px 1px #FFF;
 }
 
 
@@ -3286,6 +3307,11 @@ ul.history li .featured-box .box-content {
         font-size: 2em;
         line-height: 1em;
         margin-top: 10px;
+    }
+
+    h1.big {
+        font-size: 2em;
+        line-height: 42px;
     }
 
 }

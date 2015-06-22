@@ -268,7 +268,7 @@
 
         //Basic Speeds
         slideSpeed : 200,
-        paginationSpeed : 800,
+        paginationSpeed : 1000,
         rewindSpeed : 1000,
 
 
@@ -1887,7 +1887,7 @@
         $.each(events, $.proxy(function (index, event) {
             this._supress[event] = true;
         }, this));
-    }
+    };
 
     /**
      * Releases suppressed events.
@@ -1898,7 +1898,7 @@
         $.each(events, $.proxy(function (index, event) {
             delete this._supress[event];
         }, this));
-    }
+    };
 
     /**
      * Checks the availability of some browser features.
@@ -2006,13 +2006,6 @@
 
 })(window.Zepto || window.jQuery, window, document);
 
-/**
- * LazyLoad Plugin
- * @version 2.0.0
- * @author Bartosz Wojciechowski
- * @license The MIT License (MIT)
- */
-;
 (function ($, window, document, undefined) {
 
     /**
@@ -2118,13 +2111,6 @@
 
 })(window.Zepto || window.jQuery, window, document);
 
-/**
- * AutoHeight Plugin
- * @version 2.0.0
- * @author Bartosz Wojciechowski
- * @license The MIT License (MIT)
- */
-;
 (function ($, window, document, undefined) {
 
     /**
@@ -2198,13 +2184,6 @@
 
 })(window.Zepto || window.jQuery, window, document);
 
-/**
- * Video Plugin
- * @version 2.0.0
- * @author Bartosz Wojciechowski
- * @license The MIT License (MIT)
- */
-;
 (function ($, window, document, undefined) {
 
     /**
@@ -2501,13 +2480,6 @@
 
 })(window.Zepto || window.jQuery, window, document);
 
-/**
- * Animate Plugin
- * @version 2.0.0
- * @author Bartosz Wojciechowski
- * @license The MIT License (MIT)
- */
-;
 (function ($, window, document, undefined) {
 
     /**
@@ -2596,7 +2568,7 @@
             .removeClass(this.core.settings.animateIn)
             .removeClass(this.core.settings.animateOut);
         this.core.transitionEnd();
-    }
+    };
 
     /**
      * Destroys the plugin.
@@ -2617,13 +2589,6 @@
 
 })(window.Zepto || window.jQuery, window, document);
 
-/**
- * Autoplay Plugin
- * @version 2.0.0
- * @author Bartosz Wojciechowski
- * @license The MIT License (MIT)
- */
-;
 (function ($, window, document, undefined) {
 
     /**
@@ -2750,13 +2715,6 @@
 
 })(window.Zepto || window.jQuery, window, document);
 
-/**
- * Navigation Plugin
- * @version 2.0.0
- * @author Artus Kolanowski
- * @license The MIT License (MIT)
- */
-;
 (function ($, window, document, undefined) {
     'use strict';
 
@@ -2857,7 +2815,7 @@
 
         // register event handlers
         this.$element.on(this.handlers);
-    }
+    };
 
     /**
      * Default options.
@@ -2882,7 +2840,7 @@
         dotsSpeed: false,
         dotsContainer: false,
         controlsClass: 'owl-controls'
-    }
+    };
 
     /**
      * Initializes the layout of the plugin and extends the carousel.
@@ -2948,7 +2906,7 @@
         for (override in this.overrides) {
             this.core[override] = $.proxy(this[override], this);
         }
-    }
+    };
 
     /**
      * Destroys the plugin.
@@ -2969,7 +2927,7 @@
         for (property in Object.getOwnPropertyNames(this)) {
             typeof this[property] != 'function' && (this[property] = null);
         }
-    }
+    };
 
     /**
      * Updates the internal state.
@@ -3001,7 +2959,7 @@
                 j += this.core.num.merged[i];
             }
         }
-    }
+    };
 
     /**
      * Draws the user interface.
@@ -3038,7 +2996,7 @@
         }
 
         this.controls.$indicators.toggle(options.dots);
-    }
+    };
 
     /**
      * Extends event data.
@@ -3054,7 +3012,7 @@
             size: options.center || options.autoWidth || options.dotData
                 ? 1 : options.dotsEach || options.items
         };
-    }
+    };
 
     /**
      * Gets the current page position of the carousel.
@@ -3066,7 +3024,7 @@
         return $.grep(this.pages, function (o) {
             return o.start <= index && o.end >= index;
         }).pop();
-    }
+    };
 
     /**
      * Gets the current succesor/predecessor position.
@@ -3088,7 +3046,7 @@
             successor ? position += options.slideBy : position -= options.slideBy;
         }
         return position;
-    }
+    };
 
     /**
      * Slides to the next item or page.
@@ -3097,7 +3055,7 @@
      */
     Navigation.prototype.next = function (speed) {
         $.proxy(this.overrides.to, this.core)(this.getPosition(true), speed);
-    }
+    };
 
     /**
      * Slides to the previous item or page.
@@ -3106,7 +3064,7 @@
      */
     Navigation.prototype.prev = function (speed) {
         $.proxy(this.overrides.to, this.core)(this.getPosition(false), speed);
-    }
+    };
 
     /**
      * Slides to the specified item or page.
@@ -3124,19 +3082,12 @@
         } else {
             $.proxy(this.overrides.to, this.core)(position, speed);
         }
-    }
+    };
 
     $.fn.owlCarousel.Constructor.Plugins.Navigation = Navigation;
 
 })(window.Zepto || window.jQuery, window, document);
 
-/**
- * Hash Plugin
- * @version 2.0.0
- * @author Artus Kolanowski
- * @license The MIT License (MIT)
- */
-;
 (function ($, window, document, undefined) {
     'use strict';
 
@@ -3209,7 +3160,7 @@
             this.core.dom.oStage.scrollLeft = 0;
             this.core.to(position, false, true);
         }, this));
-    }
+    };
 
     /**
      * Default options.
@@ -3217,7 +3168,7 @@
      */
     Hash.Defaults = {
         URLhashListener: false
-    }
+    };
 
     /**
      * Destroys the plugin.
@@ -3234,7 +3185,7 @@
         for (property in Object.getOwnPropertyNames(this)) {
             typeof this[property] != 'function' && (this[property] = null);
         }
-    }
+    };
 
     $.fn.owlCarousel.Constructor.Plugins.Hash = Hash;
 

@@ -962,7 +962,7 @@ window.theme = {};
 
         shuffle: 'off',
 
-        autoHeight: 'off',
+        autoHeight: 'on',
         forceFullWidth: 'off',
 
         hideThumbsOnMobile: 'off',
@@ -1038,6 +1038,9 @@ window.theme = {};
     }
 
 }).apply(this, [window.theme, jQuery]);
+
+
+
 
 // Scroll to Top
 (function (theme, $) {
@@ -2069,7 +2072,7 @@ window.theme = {};
                     e.preventDefault();
 
                     $('body').addClass('scrolling');
-                    var target = $(this).attr('href')
+                    var target = $(this).attr('href');
                     delay = 0;
 
                     if ($(document).scrollTop() == 0) {
@@ -2428,7 +2431,7 @@ window.theme = {};
 
                     if ((!self.options.stickyEnableOnBoxed && $body.hasClass('boxed')) || ($(window).width() < 991 && !self.options.stickyEnableOnMobile)) {
                         self.stickyMenuDeactivate();
-                        $header.removeClass('fixed')
+                        $header.removeClass('fixed');
                         return false;
                     }
 
@@ -2457,7 +2460,7 @@ window.theme = {};
 
                     }
 
-                }
+                };
 
                 self.stickyMenuActivate = function () {
 
@@ -2494,7 +2497,7 @@ window.theme = {};
 
                     }
 
-                }
+                };
 
                 self.stickyMenuDeactivate = function () {
 
@@ -2529,7 +2532,7 @@ window.theme = {};
 
                     }
 
-                }
+                };
 
                 if (!self.options.alwaysStickyEnabled) {
 
