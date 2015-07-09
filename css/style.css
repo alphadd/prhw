@@ -6,7 +6,6 @@ html {
 }
 
 body {
-    background: #F5F4F0 url("../img/bg-body.png") repeat scroll 0% 0%;
     color: #777777;
     font-family: 'Lora', serif;
     font-size: 14px;
@@ -34,6 +33,8 @@ body {
 }
 
 
+
+
 .col-centered{
     float: none;
     margin: 0 auto;
@@ -47,7 +48,7 @@ body {
 
 /* Header */
 #header {
-    background: #F5F4F0 url("../img/bg-body.png") repeat scroll 0% 0%;
+    background: white;
     clear: both;
     min-height: 130px;
     padding: 0 0 8px;
@@ -1464,9 +1465,8 @@ body #header nav.mega-menu .mega-menu-signin ul.dropdown-menu li a, body #header
 
 /* Page Top */
 .page-top {
-    background-color: #f2eadf;
+    background: #fffdd0;
     border-top: 5px solid #C03D2B;
-    margin-bottom: 35px;
     min-height: 50px;
     padding: 0;
     padding: 20px 0;
@@ -1590,9 +1590,9 @@ body #header nav.mega-menu .mega-menu-signin ul.dropdown-menu li a, body #header
 /* Section Featured */
 .featured {
     width:100%;
-    background: #eae4d9 url("../img/bg-post-top.gif") repeat-x;
+    background: #E8D0A9;
     margin: 0 0 0;
-    padding: 100px 0;
+    padding: 50px 0;
 }
 
 section.featured.footer {
@@ -2109,7 +2109,7 @@ aside ul.nav-list > li > a {
 
 /* #Footer */
 #footer {
-    background: #ddd;
+    background:white;
     border-top: 4px solid #C03D2B;
     font-size: 0.9em;
     margin-top: 0px;
@@ -3090,7 +3090,9 @@ html.boxed body.sticky-menu-active #header {
     .main-video-mobile {
         display:inline-block;
     }
-
+    .video-padding {
+        padding-top: 20px;
+    }
     .hide-border {
         border-top:0px;
     }
