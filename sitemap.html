@@ -94,7 +94,6 @@
                 <ul  class="nav nav-pills nav-top">
                     <li class="phone"><a href="tel:9419936613 "><i class="fa fa-phone"></i>941.993.6613</a></li>
                 </ul>
-            </nav>>
             </nav>
             <button class="btn btn-responsive-nav btn-inverse" data-toggle="collapse" data-target=".nav-main-collapse">
                 <i class="fa fa-bars"></i>
@@ -106,6 +105,7 @@
                         <li>
                             <a href="index.html">Home</a>
                         </li>
+                        <li>
                             <a href="about.html">About</a>
                         </li>
                         <li>
@@ -130,19 +130,12 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <ul class="breadcrumb">
-                            <li><a href="sitemap.html#">Home</a></li>
-                            <li class="active">Sitemap</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
                         <h1>Sitemap</h1>
                     </div>
                 </div>
             </div>
         </section>
+        <section class="featured">
 
         <div class="container">
 
@@ -160,7 +153,9 @@
                         <li>
                             <i class="fa fa-caret-right"></i><a href="testimonials.html">Testimonials</a>
                         </li>
-
+                        <li>
+                            <i class="fa fa-caret-right"></i><a href="tips.html">Tips</a>
+                        </li>
                         <li>
                         <i class="fa fa-caret-right"></i><a href="area.html">Palmer Ranch Area</a>
                         </li>
@@ -185,16 +180,17 @@
         </div>
 
 
-        <section class="featured">
+        <section style="background: #fffdd0">
             <div class="container">
 
                 <div class="row">
-                    <div class="col-md-6">
+
+                    <div style="margin-bottom: 40px" class="col-md-8 push-top">
 
                         <div class="offset-anchor" id="contact-sent"></div>
 
 
-                        <h2 class="short"><strong>Contact</strong> Us</h2>
+                        <h2 class="short">Fill out this form to contact us</h2>
 
                         <form id="contactFormAdvanced" action="contact-us-advanced.php#contact-sent" method="POST"
                               enctype="multipart/form-data">
@@ -202,61 +198,17 @@
 
                             <div class="row">
                                 <div class="form-group">
-                                    <div class="col-md-6">
+                                    <div class="col-md-12">
                                         <label>Your name *</label>
                                         <input type="text" value="" data-msg-required="Please enter your name."
                                                maxlength="100" class="form-control" name="name" id="name" required>
                                     </div>
-                                    <div class="col-md-6">
-                                        <label>Address 1 *</label>
-                                        <input type="email" value="" data-msg-required="Please enter your email address."
-                                               data-msg-email="Please enter a valid email address." maxlength="100"
-                                               class="form-control" name="email" id="email" required>
-                                    </div>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="form-group">
-                                    <div class="col-md-6">
+                                    <div class="col-md-12">
                                         <label>Your email address *</label>
-                                        <input type="email" value="" data-msg-required="Please enter your email address."
-                                               data-msg-email="Please enter a valid email address." maxlength="100"
-                                               class="form-control" name="email" id="email" required>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <label>Address 2 *</label>
-                                        <input type="email" value="" data-msg-required="Please enter your email address."
-                                               data-msg-email="Please enter a valid email address." maxlength="100"
-                                               class="form-control" name="email" id="email" required>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="form-group">
-                                    <div class="col-md-6">
-                                        <label>Your phone number *</label>
-                                        <input type="email" value="" data-msg-required="Please enter your email address."
-                                               data-msg-email="Please enter a valid email address." maxlength="100"
-                                               class="form-control" name="email" id="email" required>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <label>City, State *</label>
-                                        <input type="email" value="" data-msg-required="Please enter your email address."
-                                               data-msg-email="Please enter a valid email address." maxlength="100"
-                                               class="form-control" name="email" id="email" required>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="form-group">
-                                    <div class="col-md-6">
-                                        <label>Subject *</label>
-                                        <input type="email" value="" data-msg-required="Please enter your email address."
-                                               data-msg-email="Please enter a valid email address." maxlength="100"
-                                               class="form-control" name="email" id="email" required>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <label>Zip Code *</label>
                                         <input type="email" value="" data-msg-required="Please enter your email address."
                                                data-msg-email="Please enter a valid email address." maxlength="100"
                                                class="form-control" name="email" id="email" required>
@@ -266,9 +218,20 @@
                             <div class="row">
                                 <div class="form-group">
                                     <div class="col-md-12">
+                                        <label>Your phone number *</label>
+                                        <input type="email" value="" data-msg-required="Please enter your email address."
+                                               data-msg-email="Please enter a valid email address." maxlength="100"
+                                               class="form-control" name="email" id="email" required>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="form-group">
+                                    <div class="col-md-12">
                                         <label>Message *</label>
-                                        <textarea maxlength="5000" data-msg-required="Please enter your message." rows="10"
-                                                  class="form-control" name="message" id="message" required></textarea>
+                                    <textarea maxlength="5000" data-msg-required="Please enter your message." rows="10"
+                                              class="form-control" name="message" id="message" required></textarea>
                                     </div>
                                 </div>
                             </div>
@@ -287,7 +250,7 @@
                                                      alt="CAPTCHA code"></div>
                                             <div class="captcha-refresh">
                                                 <a href="contact.html#" id="refreshCaptcha"><i
-                                                    class="fa fa-refresh"></i></a>
+                                                        class="fa fa-refresh"></i></a>
                                             </div>
                                         </div>
                                     </div>
@@ -301,11 +264,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <hr>
-                                </div>
-                            </div>
+
                             <div class="row">
                                 <div class="col-md-12">
                                     <input type="submit" id="contactFormSubmit" value="Send Message"
@@ -314,38 +273,14 @@
                             </div>
                         </form>
                     </div>
-                    <div class="col-md-6">
-
-                        <h4 class="push-top">Get in <strong>touch</strong></h4>
-
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eget leo at velit imperdiet
-                            varius. In eu ipsum vitae velit congue iaculis vitae at risus.</p>
-
-                        <hr/>
-
-                        <h4>The <strong>Office</strong></h4>
-                        <ul class="list-unstyled">
-                            <li><i class="fa fa-map-marker"></i> <strong>Address:</strong> 1234 Street Name, City Name,
-                                United States
-                            </li>
-                            <li><i class="fa fa-phone"></i> <strong>Phone:</strong> (123) 456-7890</li>
-                            <li><i class="fa fa-envelope"></i> <strong>Email:</strong> <a href="mailto:mail@example.com">mail@example.com</a>
-                            </li>
-                        </ul>
-
-                        <hr/>
-
-                        <h4>Business <strong>Hours</strong></h4>
-                        <ul class="list-unstyled">
-                            <li><i class="fa fa-time"></i> Monday - Friday 9am to 5pm</li>
-                            <li><i class="fa fa-time"></i> Saturday - 9am to 2pm</li>
-                            <li><i class="fa fa-time"></i> Sunday - Closed</li>
-                        </ul>
-
+                    <div class="col-md-4 pull-right">
+                        <img class="img-responsive pull-right push-top" src="img/siesta-beach.jpg" alt=""/>
                     </div>
+
                 </div>
 
             </div>
+
         </section>
 
     </div>
