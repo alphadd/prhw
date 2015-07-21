@@ -523,7 +523,7 @@ ul.list li {
 }
 
 ul.list.icons li i {
-    color: #CCC;
+    color:#C03D2B;
     margin-right: 5px;
 }
 
@@ -1800,7 +1800,7 @@ html.boxed .pricing-table .plan, html.boxed .pricing-table h3 {
 }
 
 .feature-box .feature-box-icon {
-    background: #CCC;
+    background: #C03D2B;
     border-radius: 35px;
     color: #FFF;
     display: inline-block;
@@ -2301,7 +2301,7 @@ section.timeline .timeline-box .owl-carousel {
 
 /* Testimonials */
 blockquote.testimonial {
-    background: #CCC none repeat scroll 0% 0%;
+    background:rgba(255, 255, 255, 0.5);
     border-radius: 10px;
     border: 0px none;
     color: #666;
